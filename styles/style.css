@@ -1,0 +1,181 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Nunito', Arial, sans-serif;
+  width: 1152px;
+
+
+}
+.header {
+  position: relative;
+  width: 1152px;
+  height: 800px;
+  margin: 0 auto;
+}
+.header__logo {
+  position: absolute;
+  display: flex;
+  width: 192px;
+  height: 33px;
+  left: 80px;
+  top: 23px;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.25em;
+  color: #3E3F43;
+  align-items: center;
+  z-index: 2;
+}
+.header__logo_img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.header__menu {
+  z-index: 2;
+  display: flex;
+  width: 430px;
+  height: 22px;
+  justify-content: space-around;
+  padding-top: 27px;
+  margin-left: 387px;
+}
+
+.header__menu_link {
+  margin: 0px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(34, 34, 34, 0.75);
+  z-index: 2;
+  text-decoration: none;
+}
+.header__menu_link:hover {
+  background-color: darkgrey;
+}
+.menu_link_current-page {
+  font-weight: 800;
+  color: #DAA520;
+}
+.header__background {
+  background: url(../images/Rectangle4.svg);
+  width: 370px;
+  height: 800px;
+  left: 782px;
+  top: 0px;
+  position: absolute;
+  z-index: 1;
+}
+.header__image_table {
+  position: absolute;
+  width: 568px;
+  height: 577px;
+  left: 584px;
+  top: 165px;
+  z-index: 2;
+}
+.header__subtitle {
+  width: 504px;
+  height: 376px;
+  margin-left: 102px;
+  margin-top: 217px;
+}
+.header__subtitle_small {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  color: #3E3F43;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.subtitle_small_bold {
+  font-weight: bold;
+}
+.header__subtitle_large {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 98px;
+  color: #313235;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.header__subtitle_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 175px;
+  height: 50px;
+  background: #DAA520;
+}
+.subtitle_button_link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header__subtitle_button:hover {
+  background-color: darkturquoise;
+}
+.about {
+  position: relative;
+  width: 1152px;
+  height: 950px;
+    margin-top: 120px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 952px;
+  height: 98px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title_big {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+  text-align: right;
+  color: rgba(34, 34, 34, 0.1);
+}
+.title_small {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  color: #3E3F43;
+}
+.about__description {
+  width: 1052px;
+  height: 812px;
+  margin-left: 100px;
+  margin-top: 40px;
+  border: 1px blue solid;
+}
+.about__first {
+  width: 1052px;
+  height: 388px;
+  border: red 1px solid;
+}
+.about__first_background {
+  background: url(../images/Rectangle5.svg);
+  width: 278px;
+  height: 388px;
+  position: absolute;
+  z-index: 1;
+}
+.about__first_image {
+  margin-top: 82px;
+  margin-left: 38px;
+  z-index: 3;
+  position: absolute;
+}
