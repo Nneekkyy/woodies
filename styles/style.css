@@ -108,6 +108,7 @@
   margin-top: 0px;
   margin-bottom: 16px;
 }
+
 .button {
   display: flex;
   align-items: center;
@@ -117,7 +118,9 @@
   background: #DAA520;
   border-radius: 4px;
 }
+
 .button_link {
+
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -327,6 +330,7 @@
   list-style-type: none;
   padding-left: 0px;
   align-content: center;
+  margin-top: 40px;
 }
 .list_cell {
   display: flex;
@@ -339,6 +343,7 @@
   font-size: 24px;
   line-height: 33px;
   color: #3E3F43;
+  flex-direction: column;
 }
 .list_cell:nth-child(3n+1) {
   background-image: url(../images/Rectangle1.svg);
@@ -362,4 +367,52 @@
 }
 .cell_img {
   margin: 0 auto;
+}
+.button_cell {
+  width: 123px;
+  height: 40px;
+  position: absolute;
+  background: none;
+  border: 1px solid #3E3F43;
+  margin-left: 141px;
+  margin-top: 344px;
+}
+.list_cell_text {
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 24px;
+}
+.list_cell_img {
+margin-left: 0px;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+}
+.list_cell_img_center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.footer {
+  width: 1152px;
+  height: 455px;
+  z-index: 1;
+  position: relative;
+  border: 1px green solid;
+
+}
+.footer__background_img {
+  position: absolute;
+  width: 508px;
+  height: 455px;
+  right: 0px;
+  bottom: 0px;
+}
+.footer__background {
+  background-image: url(../images/pexels2.svg);
+  width: 644px;
+  height: 455px;
+  z-index: 1;
+  border: 1px black solid;
 }
