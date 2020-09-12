@@ -1,15 +1,7 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Nunito', Arial, sans-serif;
   width: 1152px;
-
-
 }
 .header {
   position: relative;
@@ -17,7 +9,7 @@
   height: 800px;
   margin: 0 auto;
 }
-.header__logo {
+.logo__header {
   position: absolute;
   display: flex;
   width: 192px;
@@ -34,7 +26,7 @@
   align-items: center;
   z-index: 2;
 }
-.header__logo_img {
+.logo__header_img {
   width: 30px;
   height: 30px;
   margin-right: 8px;
@@ -110,17 +102,13 @@
 }
 
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 175px;
-  height: 50px;
+  display: inline-block;
+  padding: 14px 24px;
   background: #DAA520;
   border-radius: 4px;
 }
 
 .button_link {
-
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
@@ -163,12 +151,10 @@
   height: 812px;
   margin-left: 100px;
   margin-top: 40px;
-  border: 1px blue solid;
 }
 .about__first {
   width: 1052px;
   height: 388px;
-  border: red 1px solid;
 }
 .about__first_background {
   background: url(../images/Rectangle5.svg);
@@ -253,7 +239,6 @@
   width: 952px;
   height: 453px;
   margin: 0 auto;
-  border: 1px blue solid;
 }
 .how__steps {
   width: 952px;
@@ -264,7 +249,6 @@
   margin-top: 64px;
   margin-bottom: 0px;
   list-style-type: decimal;
-  border: 1px red solid;
 }
 .how__steps_cell {
   position: relative;
@@ -307,22 +291,20 @@
   top: 22.5px;
 }
 .button_how {
+  /* не получилось зацентровать через margin-left auto */
   margin-top: 64px;
-  margin-left:auto;
-  margin-right: auto;
+  margin-left: 40%;
 }
 .categories {
   margin-top: 145px;
   width: 952px;
   height: 978px;
-  border: 1px black solid;
   margin-left: auto;
   margin-right: auto;
 }
 .categories__list {
   width: 952px;
   height: 840px;
-  border: 1px blue solid;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -352,7 +334,7 @@
 .list_cell:nth-child(3n+2) {
   background-image: url(../images/Rectangle2.svg);
 }
-.list_cell:nth-child(3) {
+.list_cell:nth-child(3n+3) {
   background-image: url(../images/Rectangle3.svg);
 }
 .list_cell:nth-child(3n+3) {
@@ -376,6 +358,8 @@
   border: 1px solid #3E3F43;
   margin-left: 141px;
   margin-top: 344px;
+  padding: 0px;
+  text-align: center;
 }
 .list_cell_text {
   position: absolute;
@@ -399,8 +383,7 @@ margin-bottom: auto;
   height: 455px;
   z-index: 1;
   position: relative;
-  border: 1px green solid;
-
+  margin-top: 120px;
 }
 .footer__background_img {
   position: absolute;
@@ -408,11 +391,79 @@ margin-bottom: auto;
   height: 455px;
   right: 0px;
   bottom: 0px;
+  z-index: 1;
 }
 .footer__background {
   background-image: url(../images/pexels2.svg);
   width: 644px;
   height: 455px;
   z-index: 1;
-  border: 1px black solid;
+}
+.footer__background_line {
+  position: absolute;
+  display: flex;
+  width: 708px;
+  border: 1px solid #C4C4C4;
+  z-index: 2;
+  margin-left: 108px;
+  margin-top: 208px;
+}
+.footer__info {
+  position: absolute;
+  width: 709px;
+  height: 138px;
+  margin-top: 232px;
+  margin-left: 107px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+.column_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+  text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+.footer__column-links{
+  box-sizing: content-box;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__column-link{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #8D8D8D;
+  text-decoration: none;
+}
+.footer__column-link:hover {
+  background-color: black;
+  
+}
+.logo_footer {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.footer__copyright {
+  position: absolute;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8D8D8D;
+  margin-top: 415px;
+  margin-left: 524px;
 }
