@@ -208,7 +208,7 @@
   position: absolute;
   margin-top: 167px;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 648px;
   height: 131px;
 }
@@ -450,7 +450,7 @@ margin-bottom: auto;
 }
 .footer__column-link:hover {
   background-color: black;
-  
+
 }
 .logo_footer {
   position: relative;
