@@ -9,4 +9,4 @@
 Для создания сайта использовались HTML + CSS.
 
 #### Ссылка на Github Pages
-https://barrrsss.github.io/woodies/
+https://nneekkyy.github.io/woodies/
